@@ -80,7 +80,7 @@ google-auth==2.18.0
     #   tensorboard
 google-auth-oauthlib==0.4.6
     # via tensorboard
-grpcio==1.54.0
+grpcio==1.66.2
     # via tensorboard
 gym==0.23.1
     # via cleanrl
@@ -346,7 +346,7 @@ urllib3==1.26.15
     #   sentry-sdk
 virtualenv==20.21.0
     # via pre-commit
-wandb==0.13.11
+wandb==0.16.0
     # via cleanrl
 werkzeug==2.2.3
     # via tensorboard

@@ -38,7 +38,7 @@ gitdb==4.0.12
     # via gitpython
 gitpython==3.1.44
     # via wandb
-grpcio==1.73.1
+grpcio==1.66.2
     # via tensorboard
 gymnasium==0.29.0
     # via
@@ -109,7 +109,7 @@ opencv-python==4.11.0.86
     # via ppo-trxl
 packaging==25.0
     # via tensorboard
-protobuf==4.25.8
+protobuf==4.21.0
     # via
     #   tensorboard
     #   wandb

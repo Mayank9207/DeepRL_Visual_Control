@@ -70,7 +70,7 @@ google-auth-oauthlib==0.4.6
     # via tensorboard
 greenlet==2.0.2 ; platform_machine == 'AMD64' or platform_machine == 'WIN32' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'ppc64le' or platform_machine == 'win32' or platform_machine == 'x86_64'
     # via sqlalchemy
-grpcio==1.54.0
+grpcio==1.66.2
     # via tensorboard
 gym==0.23.1
     # via cleanrl
@@ -304,7 +304,7 @@ urllib3==1.26.15
     #   sentry-sdk
 virtualenv==20.21.0
     # via pre-commit
-wandb==0.13.11
+wandb==0.16.0
     # via cleanrl
 werkzeug==2.2.3
     # via tensorboard

@@ -129,3 +129,16 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+runs/
+videos/
+portfolio_hd_videos/
+.uv_cache/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Keep assets but ignore other binaries
+!assets/Expert_Agent_StarPilot.mp4
+!assets/starpilot_model.pth

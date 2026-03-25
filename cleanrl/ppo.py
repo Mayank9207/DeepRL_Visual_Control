@@ -32,6 +32,8 @@ class Args:
     """the entity (team) of wandb's project"""
     capture_video: bool = False
     """whether to capture videos of the agent performances (check out `videos` folder)"""
+    save_model: bool = False
+    """whether to save the trained model to `runs/{run_name}` after training"""
 
     # Algorithm specific arguments
     env_id: str = "CartPole-v1"
@@ -307,6 +309,12 @@ if __name__ == "__main__":
         writer.add_scalar("losses/explained_variance", explained_var, global_step)
         print("SPS:", int(global_step / (time.time() - start_time)))
         writer.add_scalar("charts/SPS", int(global_step / (time.time() - start_time)), global_step)
+
+    if args.save_model:
+        os.makedirs(f"runs/{run_name}", exist_ok=True)
+        model_path = f"runs/{run_name}/{args.exp_name}.cleanrl_model"
+        torch.save(agent.state_dict(), model_path)
+        print(f"model saved to {model_path}")
 
     envs.close()
     writer.close()
