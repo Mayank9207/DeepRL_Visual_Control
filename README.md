@@ -86,13 +86,9 @@ python cleanrl/ppo_procgen.py \
 
 ## Screenshots
 
-Add screenshots in this section:
-
-```markdown
 ![Training Dashboard](assets/dashboard_image.png)
 ![Evaluation Frame](assets/evaluation_frame.png)
 ![W&B Curves](assets/wandb_curves.png)
-```
 
 ## Acknowledgements
 
