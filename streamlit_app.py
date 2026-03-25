@@ -7,7 +7,7 @@ import os
 # --- CONFIGURATION ---
 PROJECT_ROOT = Path(__file__).parent
 SCRIPTS_DIR = PROJECT_ROOT / "cleanrl"
-VIDEO_DIR = PROJECT_ROOT / "videos"  # Tip: Record a run and put the .mp4 here!
+VIDEO_DIR = PROJECT_ROOT / "assets"  # Tip: Record a run and put the .mp4 here!
 
 st.set_page_config(
     page_title="Mayank | DeepRL Visual Control",
